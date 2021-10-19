@@ -3,9 +3,12 @@ kind: Service
 metadata:
   name: ecsdemo-nodejs
   namespace: clb-test
+#  annotations:
+#    service.beta.kubernetes.io/aws-load-balancer-internal: "true"  
 spec:
   selector:
     app: ecsdemo-nodejs
+#  type: LoadBalancer
   ports:
    -  protocol: TCP
       port: 80
