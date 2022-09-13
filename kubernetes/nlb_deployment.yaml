@@ -29,4 +29,4 @@ spec:
           protocol: TCP
 #add nodeSelector
       nodeSelector:
-        nodegroup-type: "backend-workloads"
+        nodegroup-type: "managed-backend-workloads"
